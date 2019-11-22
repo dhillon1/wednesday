@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D9122073F8C4EE2DB5264A6 /* Pods_wednesday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2037EE5C87E7E49320042D5 /* Pods_wednesday.framework */; };
 		B16E9185238609E300B294BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E9184238609E300B294BE /* AppDelegate.swift */; };
 		B16E9187238609E300B294BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16E9186238609E300B294BE /* ViewController.swift */; };
 		B16E918A238609E300B294BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16E9188238609E300B294BE /* Main.storyboard */; };
 		B16E918C238609E400B294BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16E918B238609E400B294BE /* Assets.xcassets */; };
 		B16E918F238609E400B294BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16E918D238609E400B294BE /* LaunchScreen.storyboard */; };
+		B1E3325C238708A4006B63C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1E3325B238708A4006B63C5 /* GoogleService-Info.plist */; };
+		B1E3325E23870A2E006B63C5 /* createViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3325D23870A2E006B63C5 /* createViewController.swift */; };
+		B1E3326023871C81006B63C5 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3325F23871C81006B63C5 /* mainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4122262E272333424C475CBC /* Pods-wednesday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wednesday.release.xcconfig"; path = "Target Support Files/Pods-wednesday/Pods-wednesday.release.xcconfig"; sourceTree = "<group>"; };
+		7BA2A4C3A133F736B4FD74C3 /* Pods-wednesday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wednesday.debug.xcconfig"; path = "Target Support Files/Pods-wednesday/Pods-wednesday.debug.xcconfig"; sourceTree = "<group>"; };
 		B16E9181238609E300B294BE /* wednesday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wednesday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16E9184238609E300B294BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B16E9186238609E300B294BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		B16E918B238609E400B294BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B16E918E238609E400B294BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B16E9190238609E400B294BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E3325B238708A4006B63C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1E3325D23870A2E006B63C5 /* createViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createViewController.swift; sourceTree = "<group>"; };
+		B1E3325F23871C81006B63C5 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		D2037EE5C87E7E49320042D5 /* Pods_wednesday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wednesday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9122073F8C4EE2DB5264A6 /* Pods_wednesday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5F04C3A3602D7A3DA05945 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2037EE5C87E7E49320042D5 /* Pods_wednesday.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		762182EED6461F81BEC01587 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BA2A4C3A133F736B4FD74C3 /* Pods-wednesday.debug.xcconfig */,
+				4122262E272333424C475CBC /* Pods-wednesday.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B16E9178238609E300B294BE = {
 			isa = PBXGroup;
 			children = (
 				B16E9183238609E300B294BE /* wednesday */,
 				B16E9182238609E300B294BE /* Products */,
+				762182EED6461F81BEC01587 /* Pods */,
+				4B5F04C3A3602D7A3DA05945 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +90,9 @@
 				B16E918B238609E400B294BE /* Assets.xcassets */,
 				B16E918D238609E400B294BE /* LaunchScreen.storyboard */,
 				B16E9190238609E400B294BE /* Info.plist */,
+				B1E3325B238708A4006B63C5 /* GoogleService-Info.plist */,
+				B1E3325D23870A2E006B63C5 /* createViewController.swift */,
+				B1E3325F23871C81006B63C5 /* mainViewController.swift */,
 			);
 			path = wednesday;
 			sourceTree = "<group>";
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B16E9193238609E400B294BE /* Build configuration list for PBXNativeTarget "wednesday" */;
 			buildPhases = (
+				86A34A6B55BD6CEFA5F1BE16 /* [CP] Check Pods Manifest.lock */,
 				B16E917D238609E300B294BE /* Sources */,
 				B16E917E238609E300B294BE /* Frameworks */,
 				B16E917F238609E300B294BE /* Resources */,
+				805A773580C78095EC3F1FF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16E918F238609E400B294BE /* LaunchScreen.storyboard in Resources */,
+				B1E3325C238708A4006B63C5 /* GoogleService-Info.plist in Resources */,
 				B16E918C238609E400B294BE /* Assets.xcassets in Resources */,
 				B16E918A238609E300B294BE /* Main.storyboard in Resources */,
 			);
@@ -130,13 +166,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		805A773580C78095EC3F1FF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wednesday/Pods-wednesday-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wednesday/Pods-wednesday-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wednesday/Pods-wednesday-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86A34A6B55BD6CEFA5F1BE16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wednesday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B16E917D238609E300B294BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B16E9187238609E300B294BE /* ViewController.swift in Sources */,
+				B1E3325E23870A2E006B63C5 /* createViewController.swift in Sources */,
 				B16E9185238609E300B294BE /* AppDelegate.swift in Sources */,
+				B1E3326023871C81006B63C5 /* mainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +360,7 @@
 		};
 		B16E9194238609E400B294BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA2A4C3A133F736B4FD74C3 /* Pods-wednesday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +379,7 @@
 		};
 		B16E9195238609E400B294BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4122262E272333424C475CBC /* Pods-wednesday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
