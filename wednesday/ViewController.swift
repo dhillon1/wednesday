@@ -19,8 +19,9 @@ class ViewController: UIViewController {
             let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainViewController") as! mainViewController
             self.present(loginVC, animated: true, completion: nil)
             
+            
         }
-        // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func login(_ sender: UIButton) {
