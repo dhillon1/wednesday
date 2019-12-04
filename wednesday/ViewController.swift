@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
 
     @IBAction func login(_ sender: UIButton) {
         

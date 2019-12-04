@@ -31,6 +31,7 @@ class createViewController: UIViewController {
                 self.present(alertController, animated: true, completion: nil)
             }
             else{
+                
                 self.presentingViewController?.dismiss(animated: false, completion:nil)
             }
         }
